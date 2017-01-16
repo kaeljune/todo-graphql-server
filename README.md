@@ -1,9 +1,9 @@
-# Orionsoft GraphQL Server Boilerplate
+# Todo GraphQL Server
 
 Installation
 
 ```sh
-$ git clone https://github.com/orionsoft/server-boilerplate [name of your app]
+$ https://github.com/kaeljune/todo-graphql-server.git [name of your app]
 $ cd [name of your app]
 $ rm -rf .git
 $ yarn
