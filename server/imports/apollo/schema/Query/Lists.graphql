@@ -1,0 +1,3 @@
+type Query {
+  lists(count: Int): [List]
+}

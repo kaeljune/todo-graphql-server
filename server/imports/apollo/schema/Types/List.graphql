@@ -1,0 +1,8 @@
+type List {
+  _id: ID
+  name: String!
+  incompleteCount: Int!
+  private: Boolean!
+  userId: String!
+  todos: [Todo]
+}

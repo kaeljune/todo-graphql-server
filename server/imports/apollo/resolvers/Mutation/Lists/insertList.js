@@ -1,13 +1,13 @@
 import { Meteor } from 'meteor/meteor'
-import Posts from 'api/collections/Posts'
+import Lists from 'api/collections/Lists'
 import { pubsub } from 'api/apollo/index'
 
 export default function (root, args, context) {
   if (context.userId) {
-    return Posts.insert(args, (response) => {
+    return Lists.insert(args, (response) => {
       if (response) {
         args._id = response
-        pubsub.publish('postInserted', args)
+        pubsub.publish('listInserted', args)
       }
     })
   } else {

@@ -1,0 +1,8 @@
+scalar Date
+type Todo {
+  _id: ID
+  text: String
+  createdAt: Date
+  checked: Boolean
+  listId: String!
+}

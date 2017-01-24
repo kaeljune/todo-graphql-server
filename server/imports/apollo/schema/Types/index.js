@@ -1,7 +1,11 @@
 import User from './User.graphql'
-import Posts from './Posts.graphql'
+import Post from './Post.graphql'
+import List from './List.graphql'
+import Todo from './Todo.graphql'
 
 export default [
   User,
-  Posts
+  Post,
+  List,
+  Todo
 ]
